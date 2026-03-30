@@ -517,10 +517,10 @@ export default function PrivacyPolicyPage() {
             <p className="text-slate-700 leading-relaxed">
               To exercise any of these rights, please contact Us at{" "}
               <a
-                href="mailto:support@wearwise.app"
+                href="mailto:support@wearwise.info"
                 className="text-[#2d5690] hover:text-[#0f2340] underline underline-offset-2 transition-colors"
               >
-                support@wearwise.app
+                support@wearwise.info
               </a>{" "}
               with the subject line &quot;KVKK Data Request&quot;. We will
               respond to Your request within 30 days.
@@ -594,10 +594,10 @@ export default function PrivacyPolicyPage() {
               <p className="text-slate-600">
                 Email:{" "}
                 <a
-                  href="mailto:support@wearwise.app"
+                  href="mailto:support@wearwise.info"
                   className="text-[#2d5690] hover:text-[#0f2340] underline underline-offset-2 transition-colors font-medium"
                 >
-                  support@wearwise.app
+                  support@wearwise.info
                 </a>
               </p>
               <p className="text-slate-600">Country: Turkey</p>
