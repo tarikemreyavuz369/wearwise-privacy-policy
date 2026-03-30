@@ -18,18 +18,18 @@ const sections = [
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="min-h-screen bg-[#f0f4fb] text-slate-800">
+    <div className="min-h-screen bg-white text-gray-800">
       {/* ── Header ─────────────────────────────────────────────── */}
-      <header className="bg-[#1e3a5f] text-white py-14 px-6 text-center">
-        <p className="text-xs font-bold tracking-[0.2em] uppercase text-[#dce6f5] mb-3">
+      <header className="bg-black text-white py-14 px-6 text-center">
+        <p className="text-xs font-bold tracking-[0.2em] uppercase text-gray-300 mb-3">
           WearWise
         </p>
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
           Privacy Policy
         </h1>
-        <p className="mt-4 text-[#dce6f5] text-sm">
+        <p className="mt-4 text-gray-300 text-sm">
           Last updated:{" "}
-          <time dateTime="2026-03-30" className="font-semibold text-white">
+          <time dateTime="2026-03-30" className="font-semibold text-gray-300">
             March 30, 2026
           </time>
         </p>
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
       {/* ── Body ───────────────────────────────────────────────── */}
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Intro */}
-        <p className="text-slate-600 leading-relaxed mb-10">
+        <p className="text-gray-600 leading-relaxed mb-10">
           This Privacy Policy describes Our policies and procedures on the
           collection, use, and disclosure of Your information when You use the
           WearWise application and tells You about Your privacy rights and how
@@ -52,20 +52,20 @@ export default function PrivacyPolicyPage() {
         {/* Table of Contents */}
         <nav
           aria-label="Table of contents"
-          className="rounded-xl border border-[#dce6f5] bg-white p-6 shadow-sm mb-12"
+          className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm mb-12"
         >
-          <h2 className="text-xs font-bold uppercase tracking-[0.15em] text-[#4a6fa5] mb-4">
+          <h2 className="text-xs font-bold uppercase tracking-[0.15em] text-black mb-4">
             Contents
           </h2>
           <ol className="space-y-2">
             {sections.map((s, i) => (
               <li key={s.id} className="flex items-baseline gap-3">
-                <span className="text-xs font-mono text-slate-400 w-5 shrink-0 select-none">
+                <span className="text-xs font-mono text-gray-400 w-5 shrink-0 select-none">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <a
                   href={`#${s.id}`}
-                  className="text-sm text-[#2d5690] hover:text-[#0f2340] hover:underline underline-offset-2 transition-colors"
+                  className="text-sm text-black hover:text-gray-600 hover:underline underline-offset-2 transition-colors"
                 >
                   {s.label}
                 </a>
@@ -81,7 +81,7 @@ export default function PrivacyPolicyPage() {
             <SectionHeading>1. Interpretation &amp; Definitions</SectionHeading>
 
             <SubHeading>1.1 Interpretation</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4">
               The words of which the initial letter is capitalized have meanings
               defined under the following conditions. The following definitions
               shall have the same meaning regardless of whether they appear in
@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
             </p>
 
             <SubHeading>1.2 Definitions</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4">
               For the purposes of this Privacy Policy:
             </p>
             <dl className="space-y-4">
@@ -150,10 +150,10 @@ export default function PrivacyPolicyPage() {
                 ],
               ].map(([term, def]) => (
                 <div key={term} className="flex gap-3">
-                  <dt className="font-semibold text-[#1e3a5f] shrink-0 min-w-[140px]">
+                  <dt className="font-semibold text-black shrink-0 min-w-[140px]">
                     {term}
                   </dt>
-                  <dd className="text-slate-600 leading-relaxed">{def}</dd>
+                  <dd className="text-gray-600 leading-relaxed">{def}</dd>
                 </div>
               ))}
             </dl>
@@ -166,11 +166,11 @@ export default function PrivacyPolicyPage() {
             </SectionHeading>
 
             <SubHeading>2.1 Personal Data</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-3">
+            <p className="text-gray-700 leading-relaxed mb-3">
               While using Our Service, We may ask You to provide Us with certain
               personally identifiable information, which may include:
             </p>
-            <ul className="list-disc list-outside pl-6 space-y-1.5 text-slate-600 mb-6">
+            <ul className="list-disc list-outside pl-6 space-y-1.5 text-gray-600 mb-6">
               <li>
                 Your name and email address (collected via Google Sign-In /
                 OAuth)
@@ -198,7 +198,7 @@ export default function PrivacyPolicyPage() {
             </ul>
 
             <SubHeading>2.2 Usage Data</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-3">
+            <p className="text-gray-700 leading-relaxed mb-3">
               Usage Data is collected automatically when using the Service. It
               may include information such as Your Device&apos;s IP address,
               device type, operating system version, app version, features used,
@@ -207,11 +207,11 @@ export default function PrivacyPolicyPage() {
             </p>
 
             <SubHeading>2.3 Photo and Image Data</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-3">
+            <p className="text-gray-700 leading-relaxed mb-3">
               WearWise&apos;s core functionality requires the processing of
               photos You provide:
             </p>
-            <ul className="list-disc list-outside pl-6 space-y-1.5 text-slate-600 mb-4">
+            <ul className="list-disc list-outside pl-6 space-y-1.5 text-gray-600 mb-4">
               <li>
                 Self-portraits (selfies) you voluntarily submit for virtual
                 outfit try-on generation
@@ -224,7 +224,7 @@ export default function PrivacyPolicyPage() {
                 processing your submitted photos
               </li>
             </ul>
-            <p className="text-slate-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               Your photos are transmitted securely to our AI processing
               infrastructure (Google Gemini API) solely for the purpose of
               generating virtual try-on images. We do not use Your photos to
@@ -234,7 +234,7 @@ export default function PrivacyPolicyPage() {
             </p>
 
             <SubHeading>2.4 Wardrobe and Outfit Data</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               We store metadata associated with the clothing items and outfits
               You save in Your wardrobe, including item names, categories, tags,
               and Your preferences. This data is used to personalize Your
@@ -242,7 +242,7 @@ export default function PrivacyPolicyPage() {
             </p>
 
             <SubHeading>2.5 Subscription and Payment Data</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               Subscription management and payment processing are handled by our
               third-party provider, RevenueCat. We do not directly collect or
               store Your payment card details. We receive subscription status
@@ -256,10 +256,10 @@ export default function PrivacyPolicyPage() {
             </p>
 
             <SubHeading>2.6 Use of Your Personal Data</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-3">
+            <p className="text-gray-700 leading-relaxed mb-3">
               The Company may use Personal Data for the following purposes:
             </p>
-            <ul className="list-disc list-outside pl-6 space-y-2 text-slate-600 mb-6">
+            <ul className="list-disc list-outside pl-6 space-y-2 text-gray-600 mb-6">
               <li>
                 <strong>To provide and maintain our Service</strong>, including
                 monitoring usage and powering AI virtual try-on generation.
@@ -303,12 +303,12 @@ export default function PrivacyPolicyPage() {
             </ul>
 
             <SubHeading>2.7 Retention of Your Personal Data</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-3">
+            <p className="text-gray-700 leading-relaxed mb-3">
               The Company will retain Your Personal Data only for as long as is
               necessary for the purposes set out in this Privacy Policy.
               Specifically:
             </p>
-            <ul className="list-disc list-outside pl-6 space-y-1.5 text-slate-600 mb-6">
+            <ul className="list-disc list-outside pl-6 space-y-1.5 text-gray-600 mb-6">
               <li>
                 Account data is retained for the lifetime of your account and
                 for a reasonable period after account deletion, as required by
@@ -332,12 +332,12 @@ export default function PrivacyPolicyPage() {
             </ul>
 
             <SubHeading>2.8 AI Processing and Third-Party Services</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-3">
+            <p className="text-gray-700 leading-relaxed mb-3">
               WearWise&apos;s virtual try-on feature relies on Google&apos;s
               Gemini AI API to process Your photos and generate outfit try-on
               images. When You initiate a try-on, the following occurs:
             </p>
-            <ul className="list-disc list-outside pl-6 space-y-1.5 text-slate-600 mb-4">
+            <ul className="list-disc list-outside pl-6 space-y-1.5 text-gray-600 mb-4">
               <li>
                 Your selected selfie and clothing item photo are securely
                 transmitted over encrypted connections to Google&apos;s Gemini
@@ -352,7 +352,7 @@ export default function PrivacyPolicyPage() {
                 available to You within the app.
               </li>
             </ul>
-            <p className="text-slate-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               Your use of the virtual try-on feature constitutes Your consent to
               this processing. Google&apos;s data practices are governed by{" "}
               <ExternalLink href="https://policies.google.com/privacy">
@@ -363,7 +363,7 @@ export default function PrivacyPolicyPage() {
             </p>
 
             <SubHeading>2.9 Transfer of Your Personal Data</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               Your information may be transferred to and maintained on computers
               located outside of Turkey, including in the European Union and the
               United States, where data protection laws may differ. Your consent
@@ -375,11 +375,11 @@ export default function PrivacyPolicyPage() {
             </p>
 
             <SubHeading>2.10 Delete Your Personal Data</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-3">
+            <p className="text-gray-700 leading-relaxed mb-3">
               You have the right to delete or request that We assist in deleting
               the Personal Data that We have collected about You. This includes:
             </p>
-            <ul className="list-disc list-outside pl-6 space-y-1.5 text-slate-600 mb-4">
+            <ul className="list-disc list-outside pl-6 space-y-1.5 text-gray-600 mb-4">
               <li>
                 Deleting individual wardrobe items and try-on images directly
                 within the app.
@@ -395,7 +395,7 @@ export default function PrivacyPolicyPage() {
                 any specific data.
               </li>
             </ul>
-            <p className="text-slate-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed">
               Please note that We may need to retain certain information when we
               have a legal obligation or lawful basis to do so.
             </p>
@@ -406,7 +406,7 @@ export default function PrivacyPolicyPage() {
             <SectionHeading>3. Disclosure of Your Personal Data</SectionHeading>
 
             <SubHeading>3.1 Business Transactions</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               If the Company is involved in a merger, acquisition, or asset
               sale, Your Personal Data may be transferred. We will provide
               notice before Your Personal Data is transferred and becomes
@@ -414,7 +414,7 @@ export default function PrivacyPolicyPage() {
             </p>
 
             <SubHeading>3.2 Law Enforcement</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               Under certain circumstances, the Company may be required to
               disclose Your Personal Data if required to do so by law or in
               response to valid requests by public authorities (e.g., a Turkish
@@ -423,11 +423,11 @@ export default function PrivacyPolicyPage() {
             </p>
 
             <SubHeading>3.3 Other Legal Requirements</SubHeading>
-            <p className="text-slate-700 leading-relaxed mb-3">
+            <p className="text-gray-700 leading-relaxed mb-3">
               The Company may disclose Your Personal Data in the good faith
               belief that such action is necessary to:
             </p>
-            <ul className="list-disc list-outside pl-6 space-y-1.5 text-slate-600">
+            <ul className="list-disc list-outside pl-6 space-y-1.5 text-gray-600">
               <li>
                 Comply with a legal obligation under Turkish law or other
                 applicable jurisdiction
@@ -450,14 +450,14 @@ export default function PrivacyPolicyPage() {
           {/* ── 4. Security ─────────────────────────────────────── */}
           <section id="security">
             <SectionHeading>4. Security of Your Personal Data</SectionHeading>
-            <p className="text-slate-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4">
               The security of Your Personal Data is important to Us. We
               implement commercially reasonable security measures including
               encrypted data transmission (TLS/HTTPS), encrypted storage, and
               access controls to protect Your information, particularly Your
               photos and AI-generated images.
             </p>
-            <p className="text-slate-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed">
               However, no method of transmission over the Internet or method of
               electronic storage is 100% secure. While We strive to use
               commercially acceptable means to protect Your Personal Data, We
@@ -470,12 +470,12 @@ export default function PrivacyPolicyPage() {
             <SectionHeading>
               5. Your Rights Under Turkish Law (KVKK)
             </SectionHeading>
-            <p className="text-slate-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4">
               If You are located in Turkey, under the Law on the Protection of
               Personal Data No. 6698 (KVKK), You have the following rights with
               respect to Your Personal Data:
             </p>
-            <ul className="list-disc list-outside pl-6 space-y-2 text-slate-600 mb-6">
+            <ul className="list-disc list-outside pl-6 space-y-2 text-gray-600 mb-6">
               <li>
                 The right to learn whether Your Personal Data has been processed
               </li>
@@ -514,11 +514,11 @@ export default function PrivacyPolicyPage() {
                 unlawful processing of Your Personal Data
               </li>
             </ul>
-            <p className="text-slate-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed">
               To exercise any of these rights, please contact Us at{" "}
               <a
                 href="mailto:support@wearwise.info"
-                className="text-[#2d5690] hover:text-[#0f2340] underline underline-offset-2 transition-colors"
+                className="text-black hover:text-gray-600 underline underline-offset-2 transition-colors"
               >
                 support@wearwise.info
               </a>{" "}
@@ -530,14 +530,14 @@ export default function PrivacyPolicyPage() {
           {/* ── 6. Children ─────────────────────────────────────── */}
           <section id="children">
             <SectionHeading>6. Children&apos;s Privacy</SectionHeading>
-            <p className="text-slate-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4">
               Our Service does not address anyone under the age of 13. We do not
               knowingly collect personally identifiable information from anyone
               under the age of 13. If You are a parent or guardian and You are
               aware that Your child has provided Us with Personal Data, please
               contact Us.
             </p>
-            <p className="text-slate-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed">
               If We become aware that We have collected Personal Data from
               anyone under the age of 13 without verification of parental
               consent, We take steps to remove that information from our
@@ -551,13 +551,13 @@ export default function PrivacyPolicyPage() {
           {/* ── 7. Links ────────────────────────────────────────── */}
           <section id="links">
             <SectionHeading>7. Links to Other Websites</SectionHeading>
-            <p className="text-slate-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4">
               Our Service may contain links to other websites that are not
               operated by Us. If You click on a third-party link, You will be
               directed to that third party&apos;s site. We strongly advise You
               to review the Privacy Policy of every site You visit.
             </p>
-            <p className="text-slate-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed">
               We have no control over and assume no responsibility for the
               content, privacy policies, or practices of any third-party sites
               or services.
@@ -567,12 +567,12 @@ export default function PrivacyPolicyPage() {
           {/* ── 8. Changes ──────────────────────────────────────── */}
           <section id="changes">
             <SectionHeading>8. Changes to This Privacy Policy</SectionHeading>
-            <p className="text-slate-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4">
               We may update Our Privacy Policy from time to time. We will notify
               You of any changes by posting the new Privacy Policy on this page
               and updating the &quot;Last updated&quot; date at the top.
             </p>
-            <p className="text-slate-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4">
               Where material changes occur, We will notify You via a prominent
               in-app notice or push notification prior to the change becoming
               effective. You are advised to review this Privacy Policy
@@ -584,30 +584,30 @@ export default function PrivacyPolicyPage() {
           {/* ── 9. Contact ──────────────────────────────────────── */}
           <section id="contact">
             <SectionHeading>9. Contact Us</SectionHeading>
-            <p className="text-slate-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               If you have any questions about this Privacy Policy, wish to
               exercise your rights, or have a privacy-related concern, You can
               contact us:
             </p>
-            <address className="not-italic rounded-xl border border-[#dce6f5] bg-white p-6 shadow-sm space-y-2">
-              <p className="font-bold text-[#1e3a5f] text-lg">WearWise</p>
-              <p className="text-slate-600">
+            <address className="not-italic rounded-xl border border-gray-200 bg-white p-6 shadow-sm space-y-2">
+              <p className="font-bold text-black text-lg">WearWise</p>
+              <p className="text-gray-600">
                 Email:{" "}
                 <a
                   href="mailto:support@wearwise.info"
-                  className="text-[#2d5690] hover:text-[#0f2340] underline underline-offset-2 transition-colors font-medium"
+                  className="text-black hover:text-gray-600 underline underline-offset-2 transition-colors font-medium"
                 >
                   support@wearwise.info
                 </a>
               </p>
-              <p className="text-slate-600">Country: Turkey</p>
+              <p className="text-gray-600">Country: Turkey</p>
             </address>
           </section>
         </article>
       </div>
 
       {/* ── Footer ─────────────────────────────────────────────── */}
-      <footer className="border-t border-slate-200 py-8 mt-12 text-center text-sm text-slate-500">
+      <footer className="border-t border-gray-200 py-8 mt-12 text-center text-sm text-gray-500">
         <p>© 2026 WearWise. All rights reserved.</p>
       </footer>
     </div>
@@ -616,7 +616,7 @@ export default function PrivacyPolicyPage() {
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="text-2xl font-bold text-[#1e3a5f] mb-5 pb-3 border-b border-[#dce6f5]">
+    <h2 className="text-2xl font-bold text-black mb-5 pb-3 border-b border-gray-200">
       {children}
     </h2>
   );
@@ -624,7 +624,7 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
 
 function SubHeading({ children }: { children: React.ReactNode }) {
   return (
-    <h3 className="text-base font-semibold text-[#2d5690] mt-6 mb-2">
+    <h3 className="text-base font-semibold text-black mt-6 mb-2">
       {children}
     </h3>
   );
@@ -642,7 +642,7 @@ function ExternalLink({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-[#2d5690] hover:text-[#0f2340] underline underline-offset-2 transition-colors"
+      className="text-black hover:text-gray-600 underline underline-offset-2 transition-colors"
     >
       {children}
     </a>
