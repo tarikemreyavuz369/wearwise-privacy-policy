@@ -601,11 +601,6 @@ export default function PrivacyPolicyPage() {
                 </a>
               </p>
               <p className="text-slate-600">Country: Turkey</p>
-              <p className="text-slate-500 text-sm pt-2">
-                You can also access support via the{" "}
-                <strong>Help &amp; Support</strong> section within the app. We
-                aim to respond to all privacy-related inquiries within 30 days.
-              </p>
             </address>
           </section>
         </article>
